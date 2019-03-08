@@ -11,11 +11,19 @@ function frameIt(){
 });
 }
 
-
+function pressIt(){
+  $('form').on('keydown', function(){
+   if  ($('input:first').val() === "G"){
+     alert("You have pressed the G key");
+   }
+  
+});
+}
 
 $(document).ready(function(){
 
 getIt();
 frameIt();
+pressIt();
 
 });
